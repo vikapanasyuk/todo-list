@@ -1,0 +1,8 @@
+<app-todo-form
+(createNewItem)="addItem($event)"
+></app-todo-form>
+<app-todo-list
+[todoList]="todoList"
+(chosenItem)="removeItem($event)"
+></app-todo-list>
+

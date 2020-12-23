@@ -1,0 +1,7 @@
+<li class="list__item item">
+  <div>
+    <input class="item__checkbox" type="checkbox" [(ngModel)]="todoItem.completed">
+    <p class="item__text">{{ todoItem.title }}</p>
+  </div>
+  <span class="item__remove"  *ngIf="todoItem.completed" (click)="removeItem(todoItem)">x</span>
+</li>
